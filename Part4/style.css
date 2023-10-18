@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica';
+	box-sizing: border-box;
+}
+
+/* COLOURS USED 
+
+PINK #FFD6E1
+
+*/
+
+
+/* FONT USED */
+
+@font-face {
+	font-family: ClassicalDiary;
+	src: url(ClassicalDiary-Regular Demo.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ELEGANT;
+	src: url(ELEGANT Personal use.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ElegantoSans;
+	src: url(ElegantoSans-Thin.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* =================  SECTION 1  ================= */
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	background-image: url(images/pink.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	padding: 20px 8%;
+}
+
+.logo {
+	color: black;
+	font-family: 'ClassicalDiary';
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+nav ul {
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-family: ElegantoSans;
+}
+
+.container {
+	max-width: 600px;
+	margin-top: 15%;
+	margin-left: 33%;
+}
+
+.container h1 {
+	font-family: ELEGANT;
+	font-size: 80px;
+	font-weight: bolder;
+	color: black;
+}
+
+.container p {
+	max-width: 500px;
+	line-height: 28px;
+	color: black;
+	margin-left: 130px;
+}
+
+.links {
+	margin-top: 30px;
+}
+
+.links a {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 30%;
+}
+
+.button {
+	border: 2px solid black;
+	padding: 10px 35px;
+	border-radius: 30px;
+	margin-left: 30px;
+}
+
+/* =================  SECTION 2  ================= */
+
+#sec-2 {
+	background-color: whitesmoke;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/* FOOTER */
+
+footer {
+	background-color: #FFD6E1;
+	padding: 30px;
+	text-align: center;
+	color: black;
+}
+
+
+

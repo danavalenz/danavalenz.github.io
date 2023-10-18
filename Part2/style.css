@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'Helvetica'; 
+}
+
+@font-face {
+    font-family: 'cybernetregular';
+    src: url('cybernet-webfont.woff2') format('woff2'),
+         url('cybernet-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-image:url'color.gif'; background-repeat: repeat;
+}
+
+nav {
+	height: 80px;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.logo {
+	color: rgb(199, 21, 133);
+	font-family: 'cybernetregular';
+	font size: 1.5rem;
+	font-weight: bold;
+	padding: 0 2rem;
+}
+
+nav ul li {
+	list-style: right;
+	display: inline-block;
+	margin-left: 60px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(199, 21, 133);
+	font-size: 13px;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/color.gif);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+
+.row {
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col {
+	flex-basis: 50%;
+}
+
+.row h1 {
+	color: white;
+	font-size: 80px;
+
+}
+
+.row p {
+	color: white;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+button {
+	width: 180px;
+	color: none;
+	font-size: 12px;
+	padding: 12px 0;
+	background: white;
+	border: 0;
+	border-radius: 20px;
+	outline: non;
+	margin-top: 30px;
+}
+
+.card {
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+}
+
+.card1 {
+	background-image: url(images/pink.jpg);
+}
+
+.card2 {
+	background-image: url(images/brown.jpg);
+}
+
+.card3 {
+	background-image: url(images/black.jpg);
+}
+
+
+
