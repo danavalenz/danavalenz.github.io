@@ -127,6 +127,12 @@ nav ul li a {
 	margin-left: 30px;
 }
 
+.button:hover {
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+	
+
 /* =================  SECTION 2  ================= */
 
 #sec-2 {
