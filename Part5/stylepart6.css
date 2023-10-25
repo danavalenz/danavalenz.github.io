@@ -1,0 +1,202 @@
+/* stylesheet for Project 1 Part 5 
+
+colors:
+
+GREEN #323D14
+
+
+fonts:
+CLASSY from Dafont
+Helvetica
+
+*/
+
+/* box model fix */
+
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clearfix taken from practice*/
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* font used */
+
+@font-face {
+	font-family: Classy Free Trial;
+	src: url(Classy Free Trial.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* images */
+
+img {
+	max-width: 100%;
+}
+
+
+/* ======= navbar ====== */
+
+nav {
+	color: white;
+	background-color: #323D14;
+}
+
+.navbar-brand {
+	margin-left: 100px;
+	font-family: Classy Free Trial;
+}
+
+.nav-link {
+	font-family: Helvetica;
+	text-decoration: none;
+}
+
+#navbarNav {
+	justify-content: flex-end;
+	padding-right: 100px;
+}
+
+/* ==== jumbotron ====*/
+
+.container-fluid#hero {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(12, 1fr);
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/greenhouse.jpg);url(images/greenhouse.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+}
+
+img {
+	transform: translate(-50%,-50%);
+	filter: grayscale(100);
+	transition: .5s ease-in-out;
+}
+
+img:hover {
+	filter: grayscale(0);
+}
+
+#bigplant {
+	grid-column-start: 8;
+	grid-column-end: 16;
+	grid-row-start: 8;
+	grid-row-end:  10;
+	z-index: 1;
+}
+
+#butterflies {
+	grid-column-start: 3;
+	grid-column-end: 10;
+	grid-row-start: 4;
+	grid-row-end: 6 ;
+	z-index:1 ;
+}
+
+
+#bush {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 8;
+	grid-row-end: 10 ;
+	z-index:1 ;
+}
+
+#butterflies2 {
+	grid-column-start: 9;
+	grid-column-end: 11;
+	grid-row-start: 4;
+	grid-row-end: 8;
+	z-index:1 ;
+}
+
+
+/* ====  plants page */
+
+.container-fluid2#hero2 {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(12, 1fr);
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/greenhouse2.jpg);url(images/greenhouse.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+}
+
+#plant1 {
+	grid-column-start: 8;
+	grid-column-end: 16;
+	grid-row-start: 8;
+	grid-row-end:  10;
+	z-index: 1;
+}
+
+#plant2 {
+	grid-column-start: 3;
+	grid-column-end: 9;
+	grid-row-start: 8;
+	grid-row-end:  10;
+	z-index: 1;
+}
+
+#plant3 {
+	grid-column-start: 11;
+	grid-column-end: 14;
+	grid-row-start: 8;
+	grid-row-end:  10;
+	z-index: 1;
+}
+
+
+
+/* ==== footer ==== */
+
+footer {
+	padding: 20px;
+	color: white;
+	background-color: #323D14;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
