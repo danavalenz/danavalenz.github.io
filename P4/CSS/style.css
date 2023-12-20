@@ -1,0 +1,675 @@
+/* CSS Style Sheet for Project 4*/
+
+/* COLOURS 
+
+PRIMARY PINK #F4AFA8
+
+SECONDARY GREEN #40BA9E
+
+THIRD ORANGE RED #EB6A4B
+
+BLUE #2652A3
+
+/* FONTS */
+
+@font-face {
+    font-family: Margin DEMO;
+    src: url(Margin DEMO.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* helvetica */
+
+
+
+/* IMAGE CREDITS 
+
+Images from google
+Ghost illustration from google
+
+*/
+
+/* EXTRA INFO
+
+Background image for menu is illustrated by Dana V. 
+
+ * message from the designer*
+
+ I had fun with this class especially with this 
+ final project it maybe late and might get deducted 
+ but I enjoyed this! :D This made me want to take the next class
+ for this and want to pursue more. I have enjoyed all the 
+ assignments even when though it makes me mad when I could not get 
+ what I specifically want to do but it's a lesson learning for me
+ thank you Alex! 
+
+ */
+
+
+
+/* GLOBAL STYLING */
+
+/* Box Model fix */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* CLEAR FIX  */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+* { margin: 0; padding: 0; }
+
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #EB6A4B;
+}
+
+/* TYPE HIERARCHY */
+
+
+h1 {
+    font-family: "Margin DEMO";
+    font-size: 4rem;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Margin DEMO";
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Avenir';
+    font-size: 24px;
+    font font-weight: 300;
+    line-height: 1.8rem;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Avenir';
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.8rem;
+    margin: 0;
+}
+
+p {
+    font-family: 'Avenir';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin: 0;
+}
+
+
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+/* ______________ HEADER STYLING ______________*/
+
+#nav {
+    background-color: #F4AFA8;
+}
+
+.navbar-brand {
+    margin-left: 0px;
+    font-family: Margin DEMO;
+    font-size: 28px;
+    color: white;
+}
+
+.nav-link {
+    font-family: Helvetica;
+    color: white;
+    font-size:  16px;
+    text-decoration: none;
+
+}
+
+#navbarNav {
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+/* LOGO */
+
+#LG-logo {
+    height: 6vh;
+    padding-left: 20px;
+}
+
+.logo-type{
+    color: white;
+    font-family: Margin Demo;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.logo {
+    color: white;
+    font-family: 'Margin Demo';
+    font-size: 4rem;
+    padding: 0 2rem;
+}
+
+
+/** _____________HOMEPAGE STYLING ______________ **/
+
+/* ______________ HERO STYLING ______________ */
+
+/* media query responsive */
+
+@media (max-width: 768px) {
+    .graphics-container {
+        width: 100%;
+    }
+}
+
+#jumbo.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F4AFA8;
+    background-size: cover;
+    height: 85vh;
+    padding: 20px;
+}
+
+
+.graphics-container {
+    width: 25%;
+    text-align: center;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#hero {
+    background-size: cover;
+    background-color: ;
+    height: 90vh;
+}
+
+.row {
+    justify-content: right;
+    margin-right: 100px;
+}
+
+
+#jumbo-chunk {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1.product-tighten {
+    font-size: 90px;
+}
+
+h2.product-tighten {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+h3.product-tighten {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+/* BUTTON */ 
+
+a.CTA1 {
+    background-color: #EB6A4B ;
+    font-family: 'Avenir';
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 1em 2.5em;
+    border-radius: 2em;
+    border: 3px solid #EB6A4B;
+    text-decoration: none;
+
+}
+
+a.CTA1:hover {
+    font-family: 'Avenir';
+    color: #EB6A4B;
+    font-weight: 500;
+    border-radius: 2em;
+    padding: 1em 2.5em;
+    font-size: 14px;
+    border: 3px solid #EB6A4B;
+    background-color: #F4AFA8;
+}
+
+/* ______________ LOCATION _____________*/
+
+.container-fluid-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #40BA9E;
+}
+
+.chunk {
+    padding: 10px;
+    color: white;
+}
+
+#location {
+    margin: o;
+    margin-bottom: 10px;
+}
+
+/*_____NYOC___*/
+
+.container-fluid-NYOC {
+    height: 40vhvh;
+    background-color: #EB6A4B;
+}
+
+#NYOC {
+    padding: 20px;
+    width: 100%;
+}
+
+/* ______________ OUR STORY STYLING_________________*/
+
+.flex-container-fluid-MS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 90vh;
+}
+
+.container-image {
+    display: block;
+    margin-right: 40px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+#cafe {
+    border-radius: 30px;
+}
+
+
+.container-text {
+    margin-right: 20px;
+    padding: 10px;
+    padding-bottom: 100x;
+}
+
+.MS-title {
+    font-size: 150px;
+    color: #EB6A4B;
+}
+
+.container-text,
+.MS-title {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+/* ______________ SECTION 1 STYLING ______________*/
+
+
+@media (max-width: 768px) {
+  .section-2 {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.flex-container-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.flex-item-left-1{
+    background-color: #EB6A4B;
+    flex: 50%;
+    text-align: center;
+}
+
+.text-goal-1 {
+    background-color: #EB6A4B;
+    padding: 20px;
+    flex: 50%;
+    margin-top: 20px;
+    font-family: Margin DEMO;
+    color: white;
+    font-size: 70px;
+    line-height: 1.3;
+}
+
+.flex-item-right-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: pink;
+    background-image: url("../Images/crayons.jpg");
+    background-size: cover;
+    height: 60vh;
+    flex: 50%;
+}
+
+
+
+/* ______________ SECTION 2 STYLING ______________ */
+
+.flex-container-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.flex-item-left-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: pink;
+    background-image: url("../Images/coffee.jpg");
+    background-size: cover;
+    height: 60vh;
+    flex: 50%;
+}
+
+.text-goal-2 {
+    background-color: #EB6A4B;
+    padding: 20px;
+    flex: 50%;
+    margin-top: 20px;
+    font-family: Margin DEMO;
+    color: white;
+    font-size: 70px;
+    line-height: 1.3;
+}
+
+
+.flex-item-right-2{
+    text-align: center;
+    background-color: #EB6A4B;
+    flex: 50%;
+}
+
+
+
+
+/* ______________ BUTTON CLASS ______________*/
+
+a.CTA2 {
+font-family: 'Avenir';
+    color: white;
+    font-weight: 500;
+    border-radius: 2em;
+    padding: 0.8em 2em;
+    font-size: 16px;
+    border: 3px solid white;
+    background-color: #EB6A4B;
+    text-decoration: none;
+}
+
+a.CTA2:hover {
+    background-color: #F4AFA8;
+    font-family: 'Avenir';
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 0.6em 2em;
+    border-radius: 2em;
+    border: 3px solid #F4AFA8;
+    text-decoration: none;
+}
+
+
+
+
+/* MENU PAGE */
+
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 calc(100% - 10px); 
+        margin-right: 0;
+        max-width: none; 
+    }
+}
+
+.menu-background {
+  background-image: url("../Images/menubg.png");
+  background-size: cover;
+}
+
+/* MENU TITLE */
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.exceptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.menu-title img {
+  max-width: 100px; 
+  margin-right: 20px; 
+}
+
+.menu-title h1 {
+  font-size: 130px;
+  color: #EB6A4B;
+}
+
+/* DRINKS */
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+}
+
+.menu-container ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.menu-column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 10px;
+}
+
+.menu-column h3 {
+     font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.menu-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-column ul li {
+     margin-bottom: 8px;
+}
+
+.menu-section h3 {
+    color: #EB6A4B;
+    font-weight: bold;
+}
+
+.menu-section p {
+    color: #EB6A4B;
+}
+
+.menu-section li {
+    line-height: 35px;
+    font-size: 17px;
+}
+/* PASTRIES */
+
+.menu-items2 {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container2 {
+    text-align: center;
+}
+
+.menu-container2 h3 {
+     margin-bottom: 10px;
+}
+
+.menu-container2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container2 li {
+  margin-bottom: 5px;
+}
+
+/* CRAYONS */   
+
+.crayon-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.crayon-title h1 {
+    font-size: 130px;
+    color: #EB6A4B;
+}
+
+.crayon-info {
+    text-align: center;
+}
+
+.crayon-product {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.crayon-product img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px; /
+}
+
+
+
+/* MENU GOAL 2 */
+
+.container-MG2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #EB6A4B;
+}
+
+.item-MG2 {
+    background-color:#EB6A4B ;
+    flex: 1;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.text-MG2 {
+    color: white;
+    font-family: 'Margin DEMO';
+    font-size: 60px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+
+/* ______________ FOOTER STYLING ______________ */
+
+/* Footer Styling */
+.footer {
+    background-color: #40BA9E;
+    height: 40px auto;
+    padding: 40px 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: white;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight:bold ;
+}
+
+.footer p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
