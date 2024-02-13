@@ -1,0 +1,110 @@
+/* STYLESHEET FOR P1 
+
+Colours:
+
+
+Fonts:
+
+
+Video Content:
+
+
+*/
+
+/* button */
+
+
+
+
+/* Typography */
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+/* NAVBAR */ 
+
+.section-bg {
+     background-color: #f8f9fa;
+     border-radius: 10px;
+     padding: 20px;
+   }
+
+#brand {
+	color: white;
+}
+
+.nav-link {
+	color: white;
+	font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* JUMBOTRON */ 
+
+.jumbotron {
+   	background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/10/Waving_reeds_cinemagraph.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* TIMELINE & MILESTONES */
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.col {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+/* risk management */ 
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  @include transition($transition-collapse);
+
+  &.collapse-horizontal {
+    width: 0;
+    height: auto;
+    @include transition($transition-collapse-width);
+  }
+}
+
