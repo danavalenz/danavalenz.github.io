@@ -1,0 +1,49 @@
+/* COLUMN A */
+
+.dk {
+  background-color: darkgreen;
+  height: 12em;
+}
+
+.lt {
+  background-color: lightgreen;
+  height: 12em;
+}
+
+p {
+  padding: 10px;
+}
+
+.dk , lt {
+  border: 3px solid white;
+}
+
+/* PHOTO CLIP */
+
+.photo {
+  height: 50%;
+  clip-path: polygon(0 1%, 0% 100%, 100% 0);
+  
+.bggrad {
+  background-color:hsla(0,100%,50%,1);
+  background-image:
+  radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+}
+
+.btn {
+  background: rgb(191,124,0);
+background: linear-gradient(90deg, rgba(191,124,0,1) 0%, rgba(255,170,10,1) 21%, rgba(130,74,44,1) 50%, rgba(209,26,42,1) 80%, rgba(133,59,189,1) 100%);
+  
+}
+
+.btn1 {
+  margin: -15px 0px 0px -10px;
+  z-index: 10
+}
+
