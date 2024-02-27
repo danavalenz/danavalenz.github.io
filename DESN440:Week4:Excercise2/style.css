@@ -1,0 +1,43 @@
+
+body {
+  background-color: #fcfcff;
+  color:#115;
+
+input {
+  display: none;
+}
+
+/* BUTTONS */
+
+label {
+  display: block;
+  border: 5px solid #115;
+  padding: 1em 1.5em;
+  border-radius: .5em;
+  margin-top: .9em;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  filter: grayscale(90%);
+}
+
+/* HOVER EFFECT */ 
+
+label:hover {
+  cursor: url(https://uploads-ssl.webflow.com/5f4e8114a9640d4aa2c637c4/5f75229803e33c67887b0212_blue%20squiggle%20-%20export.svg), pointer;
+  border-color: blue;
+  background-color: #0000ff22;
+  filter: grayscale(40%);
+  transform: scale(1.05);
+  transition-duration: 1s;
+  transition: scale(1.05);
+  transition-duration: 1s;
+}
+
+input:checked + label {
+  border-color: pink;
+  box-shadow: 10px 10px 0px blue;
+  color: blue;
+  transform: translate(-5px, -10px);
+  filter: none;
+}
